@@ -4,8 +4,7 @@
         {% for game in games %}
 
         <div class="gamelist-game">
-            <a href="#">
-                <img class="gamelist-game-icon" src="{% static 'images/planeta.webp' %}">
+            <a href="games/{{game.name_url}}">
                 <img class="gamelist-game-cover" src="{{game.img}}">
                 <h2>{{game.name}}</h2>
             </a>

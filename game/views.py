@@ -4,6 +4,6 @@ from .models import Game
 
 # Create your views here.
 
-def game(request, game_name):
-    game = Game.objects.get(name=game_name)
+def game(request, game_name_url):
+    game = Game.objects.get(name_url=game_name_url)
     return render(request, 'game_sheet.html', {'game': game})
